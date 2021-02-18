@@ -1,0 +1,171 @@
+body{
+  color: #000000;
+  font-family: "Source Sans Pro";
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+
+}
+/*NAV MAIN*/
+
+.nav-main {
+  font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+
+}
+.nav-brand {
+  width: 100px;
+
+}
+.nav-main ul {
+  display: flex;
+
+}
+.nav-main ul li{
+  padding: 15px;
+
+
+}
+.nav-menu li a:hover {
+  border-bottom: 4px solid #000000;
+}
+.nav-menu li a {
+  padding: 8px;
+}
+
+/*SHOWCASE*/
+
+.showcase{
+  width: 100%;
+  color: #fff;
+  height: 550px;
+  background: url('img/showcase.png') no-repeat center center/cover;
+  display: flex;
+  margin-bottom: 50px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+  padding: 10px 20px;
+  background: #262626;
+  color: #fff;
+  font-size: 15px;
+  border: 1px solid #fff;
+  margin-bottom: 15px;
+  transition: 0.8s;
+}
+.btn:hover{
+  background: #000000;
+  color: #fff;
+  transition: 0.8s;
+}
+
+/*TYPE CARDS*/
+
+.type-cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 15px;
+  align-content: center;
+  font-weight: bold;
+  font-size: 15px;
+}
+.card {
+  width: 280px;
+  height: 180px;
+  margin-bottom: 15px;
+}
+
+/*PUBLICIDAD*/
+
+.publicidad{
+  width: 100%;
+  color: #fff;
+  height: 550px;
+  background: url('img/publicidad1.png') no-repeat center center/cover;
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.btn1{
+  cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+  padding: 10px 20px;
+  background: #262626;
+  color: #fff;
+  font-size: 15px;
+  border: 1px solid #fff;
+  margin-bottom: 0;
+  transition: 0.8s;
+}
+
+/*CONTACTO*/
+
+.contact ul{
+  font-size: 16px;
+  padding: 10px 0;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+.contact hr{
+  transform: rotate(90deg);
+  width: 20px;
+  size: 200px;
+}
+.contact ul li{
+  flex-direction: column;
+  padding: 0 10px;
+}
+
+/*FOOTER*/
+
+footer{
+  background: #000;
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+  padding: 3px 0;
+  margin-bottom: 20px;
+}
+
+/*RESPONSIVE WEBSITE*/
+
+@media (max-width: 700px){
+  .type-cards{
+    display: block;
+  }
+  .card {
+    width: 500px;
+    height: 300px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+}
