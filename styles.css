@@ -179,7 +179,11 @@ footer{
 
 /*RESPONSIVE WEBSITE*/
 
-@media (max-width: 960px){
+@media (max-width: 500px){
+  body{
+    margin: auto;
+    align-items: center;
+  }
   header{
     margin: auto;
   }
@@ -222,3 +226,4 @@ footer{
     margin: auto;
   }
 }
+
