@@ -156,9 +156,30 @@ footer{
   margin-bottom: 20px;
 }
 
+/*GALERIA DE IMAGENES*/
+
+.img-categorias{
+  align-items: center;
+}
+.img-categorias a{
+  width: 30%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.img-categorias a:hover{
+  background: #262626;
+  color: #fff;
+  border: #000000;
+  padding: 15px 20px;
+}
+
+
+
 /*RESPONSIVE WEBSITE*/
 
-@media (max-width: 700px){
+@media (max-width: 960px){
   .type-cards{
     display: block;
   }
@@ -168,4 +189,31 @@ footer{
     margin-bottom: 15px;
     margin-top: 15px;
   }
+  .img-categorias a{
+    width: 80%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+  .nav-brand {
+    width: 100px;
+    align-content: center;
+    display: block;
+    align-items: center;
+    align-self: auto;
+    margin: auto;
+    margin-top: 50px;
+  }
+  .nav-main{
+    display: block;
+    font-weight: bold;
+    align-items: center;
+  }
+  .nav-main ul li{
+    display: block;
+    font-weight: bold;
+    align-items: center;
+  }
 }
+
