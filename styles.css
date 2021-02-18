@@ -180,8 +180,14 @@ footer{
 /*RESPONSIVE WEBSITE*/
 
 @media (max-width: 960px){
+  header{
+    margin: auto;
+  }
   .type-cards{
     display: block;
+  }
+  .hr{
+    width: 100%;
   }
   .card {
     width: 500px;
@@ -213,7 +219,6 @@ footer{
   .nav-main ul li{
     display: block;
     font-weight: bold;
-    align-items: center;
+    margin: auto;
   }
 }
-
