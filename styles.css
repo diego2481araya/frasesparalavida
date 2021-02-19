@@ -186,6 +186,7 @@ footer{
   }
   header{
     margin: auto;
+    font-size: 13px;
   }
   .type-cards{
     display: block;
