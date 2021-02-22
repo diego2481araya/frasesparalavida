@@ -1,0 +1,271 @@
+body{
+  font-family: "Source Sans Pro";
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+
+}
+/*NAV MAIN*/
+
+.nav-main {
+  font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+
+}
+.nav-brand {
+  width: 100px;
+
+}
+.nav-main ul {
+  display: flex;
+
+}
+.nav-main ul li{
+  padding: 15px;
+
+
+}
+.nav-menu li a:hover {
+  border-bottom: 4px solid #000000;
+}
+.nav-menu li a {
+  padding: 8px;
+}
+
+.menu-btn {
+  position: absolute;
+  cursor: pointer;
+  top: 55px;
+  right: 45px;
+  z-index: 2;
+  color: #000000;
+  font-weight: bold;
+  border-bottom: 2px solid #000000;
+  margin-bottom: 5px;
+  display: none;
+}
+
+/*SHOWCASE*/
+
+.showcase{
+  width: 100%;
+  color: #fff;
+  height: 550px;
+  background: url('img/showcase.png') no-repeat center center/cover;
+  display: flex;
+  margin-bottom: 50px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+  padding: 10px 20px;
+  background: #262626;
+  color: #fff;
+  font-size: 15px;
+  border: 1px solid #fff;
+  margin-bottom: 15px;
+  transition: 0.8s;
+}
+.btn:hover{
+  background: #000000;
+  color: #fff;
+  transition: 0.8s;
+}
+
+/*TYPE CARDS*/
+
+.type-cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 15px;
+  align-content: center;
+  font-weight: bold;
+  font-size: 15px;
+}
+.card {
+  width: 280px;
+  height: 180px;
+  margin-bottom: 15px;
+}
+
+/*PUBLICIDAD*/
+
+.publicidad{
+  width: 100%;
+  color: #fff;
+  height: 550px;
+  background: url('img/publicidad1.png') no-repeat center center/cover;
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.btn1{
+  cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+  padding: 10px 20px;
+  background: #262626;
+  color: #fff;
+  font-size: 15px;
+  border: 1px solid #fff;
+  margin-bottom: 0;
+  transition: 0.8s;
+}
+
+/*CONTACTO*/
+
+.contact ul{
+  font-size: 16px;
+  padding: 10px 0;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+.contact hr{
+  transform: rotate(90deg);
+  width: 20px;
+  size: 200px;
+}
+.contact ul li{
+  flex-direction: column;
+  padding: 0 10px;
+}
+
+/*FOOTER*/
+
+footer{
+  background: #000;
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+  padding: 3px 0;
+  margin-bottom: 20px;
+}
+
+/*GALERIA DE IMAGENES*/
+
+.img-categorias{
+  align-items: center;
+}
+.img-categorias a{
+  width: 30%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.img-categorias a:hover{
+  background: #262626;
+  color: #fff;
+  border: #000000;
+  padding: 15px 20px;
+}
+
+/*CONTACT FORM*/
+
+
+
+/*RESPONSIVE WEBSITE*/
+
+@media (max-width: 500px){
+  body{
+    margin: auto;
+    align-items: center;
+  }
+  header{
+    margin: auto;
+    font-size: 13px;
+  }
+  .type-cards{
+    display: block;
+    align-items: center;
+    align-content: center;
+    padding: 0 15px;
+  }
+  .hr{
+    width: 100%;
+  }
+  .card {
+    width: 300px;
+    height: 200px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    right: 50px;
+  }
+  .img-categorias a{
+    width: 80%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+  a {
+    color: #fff;
+
+  }
+  .menu-btn{
+    display: flex;
+  }
+  .nav-main ul.nav-menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #2f3640;
+    height: 100%;
+    margin-top: 30px;
+    opacity: .9;
+    font-size: 18px;
+    transform: translateX(-400px);
+    transition: transform .5s ease-in-out;
+  }
+  .nav-main ul.nav-menu.show{
+    transform: translateX(-20px);
+  }
+  .nav-main ul.nav-menu li {
+    padding: 20px;
+    border-bottom: 1px solid #fff;
+  }
+  .publicidad{
+    width: 100%;
+    color: #fff;
+    height: 200px;
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .contact-form{
+    margin: auto;
+    padding: 0;
+    top: 180px;
+
+  }
+
+}
